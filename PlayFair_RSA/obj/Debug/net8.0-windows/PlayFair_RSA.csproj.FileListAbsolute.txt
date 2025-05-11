@@ -1,0 +1,16 @@
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\bin\Debug\net8.0-windows\PlayFair_RSA.exe
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\bin\Debug\net8.0-windows\PlayFair_RSA.deps.json
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\bin\Debug\net8.0-windows\PlayFair_RSA.runtimeconfig.json
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\bin\Debug\net8.0-windows\PlayFair_RSA.dll
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\bin\Debug\net8.0-windows\PlayFair_RSA.pdb
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.PlayFair_RSA.resources
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.csproj.GenerateResource.cache
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.GeneratedMSBuildEditorConfig.editorconfig
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.AssemblyInfoInputs.cache
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.AssemblyInfo.cs
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.csproj.CoreCompileInputs.cache
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.dll
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\refint\PlayFair_RSA.dll
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.pdb
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.genruntimeconfig.cache
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\ref\PlayFair_RSA.dll
