@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A1357622-9392-4C15-A72A-9BB4142AA145}|PlayFair_RSA\\PlayFair_RSA.csproj|d:\\uit_2.2\\nt101-antoanmangmaytinh\\doan\\playfair_rsa\\playfair_rsa\\playfair_rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1357622-9392-4C15-A72A-9BB4142AA145}|PlayFair_RSA\\PlayFair_RSA.csproj|solutionrelative:playfair_rsa\\playfair_rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A1357622-9392-4C15-A72A-9BB4142AA145}|PlayFair_RSA\\PlayFair_RSA.csproj|d:\\uit_2.2\\nt101-antoanmangmaytinh\\doan\\playfair_rsa\\playfair_rsa\\playfair_rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A1357622-9392-4C15-A72A-9BB4142AA145}|PlayFair_RSA\\PlayFair_RSA.csproj|solutionrelative:playfair_rsa\\playfair_rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1357622-9392-4C15-A72A-9BB4142AA145}|PlayFair_RSA\\PlayFair_RSA.csproj|d:\\uit_2.2\\nt101-antoanmangmaytinh\\doan\\playfair_rsa\\playfair_rsa\\playfair_rsa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1357622-9392-4C15-A72A-9BB4142AA145}|PlayFair_RSA\\PlayFair_RSA.csproj|solutionrelative:playfair_rsa\\playfair_rsa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1357622-9392-4C15-A72A-9BB4142AA145}|PlayFair_RSA\\PlayFair_RSA.csproj|d:\\uit_2.2\\nt101-antoanmangmaytinh\\doan\\playfair_rsa\\playfair_rsa\\playfair_rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1357622-9392-4C15-A72A-9BB4142AA145}|PlayFair_RSA\\PlayFair_RSA.csproj|solutionrelative:playfair_rsa\\playfair_rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,42 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "PlayFair_RSA.cs",
+              "DocumentMoniker": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.cs",
+              "RelativeDocumentMoniker": "PlayFair_RSA\\PlayFair_RSA.cs",
+              "ToolTip": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.cs",
+              "RelativeToolTip": "PlayFair_RSA\\PlayFair_RSA.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAIA/wIsAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T14:06:02.233Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PlayFair_RSA.Designer.cs",
               "DocumentMoniker": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.Designer.cs",
               "RelativeDocumentMoniker": "PlayFair_RSA\\PlayFair_RSA.Designer.cs",
-              "ToolTip": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.Designer.cs*",
-              "RelativeToolTip": "PlayFair_RSA\\PlayFair_RSA.Designer.cs*",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAnwFQAAAAnAAAAAAAAAA==",
+              "ToolTip": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.Designer.cs",
+              "RelativeToolTip": "PlayFair_RSA\\PlayFair_RSA.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T14:25:49.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayFair_RSA.cs",
-              "DocumentMoniker": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.cs",
-              "RelativeDocumentMoniker": "PlayFair_RSA\\PlayFair_RSA.cs",
-              "ToolTip": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.cs*",
-              "RelativeToolTip": "PlayFair_RSA\\PlayFair_RSA.cs*",
-              "ViewState": "AgIAABMAAAAAAAAAAAAwwCQAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T14:06:02.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayFair_RSA.cs [Design]",
               "DocumentMoniker": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.cs",
               "RelativeDocumentMoniker": "PlayFair_RSA\\PlayFair_RSA.cs",
-              "ToolTip": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.cs [Design]*",
-              "RelativeToolTip": "PlayFair_RSA\\PlayFair_RSA.cs [Design]*",
+              "ToolTip": "D:\\UIT_2.2\\NT101-AnToanMangMayTinh\\DoAn\\PlayFair_RSA\\PlayFair_RSA\\PlayFair_RSA.cs [Design]",
+              "RelativeToolTip": "PlayFair_RSA\\PlayFair_RSA.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T14:03:28.053Z",
               "EditorCaption": " [Design]"

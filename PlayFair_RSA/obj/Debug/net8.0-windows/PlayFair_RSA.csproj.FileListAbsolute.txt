@@ -14,3 +14,4 @@ D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8
 D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.pdb
 D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.genruntimeconfig.cache
 D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\ref\PlayFair_RSA.dll
+D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\obj\Debug\net8.0-windows\PlayFair_RSA.sourcelink.json

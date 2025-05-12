@@ -30,15 +30,18 @@
         {
             Tab = new TabControl();
             tabPage_PlayFair = new TabPage();
+            button_randomkey = new Button();
+            button_file = new Button();
             dataGridView1 = new DataGridView();
             button1 = new Button();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            textBox1 = new TextBox();
+            textBox_CypherText = new TextBox();
             textBox_Key = new TextBox();
             textBox_PlainText = new TextBox();
             tabPage2 = new TabPage();
+            openFileDialog1 = new OpenFileDialog();
             Tab.SuspendLayout();
             tabPage_PlayFair.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -56,12 +59,14 @@
             // 
             // tabPage_PlayFair
             // 
+            tabPage_PlayFair.Controls.Add(button_randomkey);
+            tabPage_PlayFair.Controls.Add(button_file);
             tabPage_PlayFair.Controls.Add(dataGridView1);
             tabPage_PlayFair.Controls.Add(button1);
             tabPage_PlayFair.Controls.Add(label3);
             tabPage_PlayFair.Controls.Add(label2);
             tabPage_PlayFair.Controls.Add(label1);
-            tabPage_PlayFair.Controls.Add(textBox1);
+            tabPage_PlayFair.Controls.Add(textBox_CypherText);
             tabPage_PlayFair.Controls.Add(textBox_Key);
             tabPage_PlayFair.Controls.Add(textBox_PlainText);
             tabPage_PlayFair.Location = new Point(4, 29);
@@ -71,6 +76,26 @@
             tabPage_PlayFair.TabIndex = 0;
             tabPage_PlayFair.Text = "PlayFair";
             tabPage_PlayFair.UseVisualStyleBackColor = true;
+            // 
+            // button_randomkey
+            // 
+            button_randomkey.Location = new Point(664, 73);
+            button_randomkey.Name = "button_randomkey";
+            button_randomkey.Size = new Size(102, 29);
+            button_randomkey.TabIndex = 6;
+            button_randomkey.Text = "Tạo khóa";
+            button_randomkey.UseVisualStyleBackColor = true;
+            button_randomkey.Click += button_randomkey_Click;
+            // 
+            // button_file
+            // 
+            button_file.Location = new Point(664, 23);
+            button_file.Name = "button_file";
+            button_file.Size = new Size(102, 29);
+            button_file.TabIndex = 6;
+            button_file.Text = "Chọn file";
+            button_file.UseVisualStyleBackColor = true;
+            button_file.Click += button_file_Click;
             // 
             // dataGridView1
             // 
@@ -86,9 +111,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(665, 23);
+            button1.Location = new Point(664, 135);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(102, 29);
             button1.TabIndex = 4;
             button1.Text = "Mã hóa";
             button1.UseVisualStyleBackColor = true;
@@ -121,12 +146,13 @@
             label1.TabIndex = 3;
             label1.Text = "Plain Text";
             // 
-            // textBox1
+            // textBox_CypherText
             // 
-            textBox1.Location = new Point(115, 347);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(528, 27);
-            textBox1.TabIndex = 2;
+            textBox_CypherText.Location = new Point(115, 347);
+            textBox_CypherText.Name = "textBox_CypherText";
+            textBox_CypherText.ReadOnly = true;
+            textBox_CypherText.Size = new Size(528, 27);
+            textBox_CypherText.TabIndex = 2;
             // 
             // textBox_Key
             // 
@@ -151,6 +177,10 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "RSA";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
             // 
             // PlayFair_RSA
             // 
@@ -179,6 +209,9 @@
         private TextBox textBox_Key;
         private DataGridView dataGridView1;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox textBox_CypherText;
+        private Button button_randomkey;
+        private Button button_file;
+        private OpenFileDialog openFileDialog1;
     }
 }
