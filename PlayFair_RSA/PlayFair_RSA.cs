@@ -1,9 +1,11 @@
 ﻿using System.Windows.Forms;
 using System.IO; // Thêm thư viện đọc file
+using System.Numerics;
 namespace PlayFair_RSA
 {
     public partial class PlayFair_RSA : Form
     {
+        BigInteger p, q, n, phi, f, d;
         public PlayFair_RSA()
         {
             InitializeComponent();
@@ -138,6 +140,127 @@ namespace PlayFair_RSA
             string randomKey = new string(alphabet.OrderBy(c => rnd.Next()).ToArray());
 
             textBox_Key.Text = randomKey.Substring(0, 5); // Chỉ lấy 5 ký tự đầu làm khóa
+        }
+        // Code giải thuật RSA :
+       
+        //Kiểm tra ước chung lớn nhất giữa e và phi(n)
+        private bool IsPrime(BigInteger num)
+        {
+            if (num < 2) return false;
+            for (BigInteger i = 2; i * i <= num; i++)
+                if (num % i == 0)
+                    return false;
+            return true;
+        }
+        private BigInteger FindPublicExponent(BigInteger phi)
+        {
+            BigInteger e = 17; // Cố định e = 17 để khớp với tính tay của bạn
+            if (GCD1(e, phi) != 1)
+            {
+                e = 3; // Nếu e = 17 không thỏa mãn, quay lại tìm từ 3
+                while (GCD1(e, phi) != 1)
+                {
+                    e++;
+                }
+            }
+            return e;
+        }
+        //Tìm ước chung lớn nhất
+        private BigInteger GCD1(BigInteger a, BigInteger b)
+        {
+            while (b != 0)
+            {
+                BigInteger temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return a;
+        }
+        private BigInteger ModInverse(BigInteger a, BigInteger m)
+        {
+            BigInteger m0 = m, t, q;
+            BigInteger x0 = 0, x1 = 1;
+            if (m == 1) return 0;
+            while (a > 1)
+            {
+                q = a / m;
+                t = m;
+                m = a % m;
+                a = t;
+                t = x0;
+                x0 = x1 - q * x0;
+                x1 = t;
+            }
+            if (x1 < 0)
+                x1 += m0;
+            return x1;
+        }
+        //Tạo khóa từ số nguyên P , Q
+        private void btnGenerateKeys_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                p = BigInteger.Parse(txtP.Text);
+                q = BigInteger.Parse(txtQ.Text);
+
+                if (p == q)
+                {
+                    MessageBox.Show("p và q phải là hai số nguyên tố khác nhau.");
+                    return;
+                }
+
+                if (!IsPrime(p) || !IsPrime(q))
+                {
+                    MessageBox.Show("p và q phải là số nguyên tố.");
+                    return;
+                }
+
+                n = p * q;
+                phi = (p - 1) * (q - 1);
+                f = FindPublicExponent(phi);
+                d = ModInverse(f, phi);
+
+                txtPublicKey.Text = $"Public Key (e, n): ({f}, {n})";
+                txtPrivateKey.Text = $"Private Key (d, n): ({d}, {n})";
+            }
+            catch
+            {
+                MessageBox.Show("Dữ liệu không hợp lệ.");
+            }
+        }
+        //Xử lí mã hóa dữ liệu
+        private void btnEncrypted_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BigInteger m = BigInteger.Parse(txtMessage.Text);
+
+                BigInteger c = BigInteger.ModPow(m, f, n);
+                txtEncrypted.Text = c.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Thông điệp không hợp lệ hoặc chưa tạo khóa.");
+            }
+        }
+        //Xử lí giải mã dữ liệu
+        private void btnDecrypted_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BigInteger c = BigInteger.Parse(txtEncrypted.Text);
+                if (c >= n || c < 0)
+                {
+                    MessageBox.Show("Bản mã phải nằm trong khoảng [0, n-1].");
+                    return;
+                }
+                BigInteger m = BigInteger.ModPow(c, d, n);
+                txtDecrypted.Text = m.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Giải mã thất bại.");
+            }
         }
     }
 }

@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PlayFair_RSA
-build_property.ProjectDir = D:\UIT_2.2\NT101-AnToanMangMayTinh\DoAn\PlayFair_RSA\PlayFair_RSA\
+build_property.ProjectDir = E:\ATM\NT101_DoAn\PlayFair_RSA\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
