@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlayFair_RSA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db75acd9eb98cd64134f33617b0adc713a7159d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+458cd5fb397a524458bf16da15ebd5a63b62fcd7")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlayFair_RSA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlayFair_RSA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
