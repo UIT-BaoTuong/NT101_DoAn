@@ -30,6 +30,7 @@
         {
             Tab = new TabControl();
             tabPage_PlayFair = new TabPage();
+            textBox_PlainText = new RichTextBox();
             button_randomkey = new Button();
             button_file = new Button();
             dataGridView1 = new DataGridView();
@@ -39,7 +40,6 @@
             label1 = new Label();
             textBox_CypherText = new TextBox();
             textBox_Key = new TextBox();
-            textBox_PlainText = new TextBox();
             tabPage2 = new TabPage();
             txtDecrypted = new TextBox();
             txtEncrypted = new TextBox();
@@ -77,6 +77,7 @@
             // 
             // tabPage_PlayFair
             // 
+            tabPage_PlayFair.Controls.Add(textBox_PlainText);
             tabPage_PlayFair.Controls.Add(button_randomkey);
             tabPage_PlayFair.Controls.Add(button_file);
             tabPage_PlayFair.Controls.Add(dataGridView1);
@@ -86,7 +87,6 @@
             tabPage_PlayFair.Controls.Add(label1);
             tabPage_PlayFair.Controls.Add(textBox_CypherText);
             tabPage_PlayFair.Controls.Add(textBox_Key);
-            tabPage_PlayFair.Controls.Add(textBox_PlainText);
             tabPage_PlayFair.Location = new Point(4, 29);
             tabPage_PlayFair.Name = "tabPage_PlayFair";
             tabPage_PlayFair.Padding = new Padding(3);
@@ -95,9 +95,17 @@
             tabPage_PlayFair.Text = "PlayFair";
             tabPage_PlayFair.UseVisualStyleBackColor = true;
             // 
+            // textBox_PlainText
+            // 
+            textBox_PlainText.Location = new Point(115, 24);
+            textBox_PlainText.Name = "textBox_PlainText";
+            textBox_PlainText.Size = new Size(528, 70);
+            textBox_PlainText.TabIndex = 7;
+            textBox_PlainText.Text = "";
+            // 
             // button_randomkey
             // 
-            button_randomkey.Location = new Point(664, 73);
+            button_randomkey.Location = new Point(664, 111);
             button_randomkey.Name = "button_randomkey";
             button_randomkey.Size = new Size(102, 29);
             button_randomkey.TabIndex = 6;
@@ -121,7 +129,7 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(115, 135);
+            dataGridView1.Location = new Point(115, 173);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(182, 168);
@@ -129,7 +137,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(664, 135);
+            button1.Location = new Point(664, 173);
             button1.Name = "button1";
             button1.Size = new Size(102, 29);
             button1.TabIndex = 4;
@@ -149,7 +157,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(27, 82);
+            label2.Location = new Point(27, 120);
             label2.Name = "label2";
             label2.Size = new Size(33, 20);
             label2.TabIndex = 3;
@@ -174,17 +182,10 @@
             // 
             // textBox_Key
             // 
-            textBox_Key.Location = new Point(115, 75);
+            textBox_Key.Location = new Point(115, 113);
             textBox_Key.Name = "textBox_Key";
             textBox_Key.Size = new Size(528, 27);
             textBox_Key.TabIndex = 2;
-            // 
-            // textBox_PlainText
-            // 
-            textBox_PlainText.Location = new Point(115, 23);
-            textBox_PlainText.Name = "textBox_PlainText";
-            textBox_PlainText.Size = new Size(528, 27);
-            textBox_PlainText.TabIndex = 2;
             // 
             // tabPage2
             // 
@@ -390,7 +391,6 @@
         private TabPage tabPage_PlayFair;
         private TabPage tabPage2;
         private Label label1;
-        private TextBox textBox_PlainText;
         private Button button1;
         private Label label2;
         private TextBox textBox_Key;
@@ -417,5 +417,6 @@
         private TextBox txtEncrypted;
         private Button btnDecrypted;
         private Button btnEncrypted;
+        private RichTextBox textBox_PlainText;
     }
 }

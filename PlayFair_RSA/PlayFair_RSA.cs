@@ -25,7 +25,7 @@ namespace PlayFair_RSA
         // Khởi tạo ma trận Playfair
         private char[,] GeneratePlayfairMatrix(string key)
         {
-            key = key.ToUpper().Replace("J", "I"); // Playfair thường thay J bằng I
+            key = key.ToUpper().Replace("J", "I").Replace(" ", ""); // Loại bỏ khoảng trắng
             string alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
             string matrixKey = new string(key.Distinct().ToArray()) + alphabet;
             matrixKey = new string(matrixKey.Distinct().ToArray()).Substring(0, 25);
@@ -63,7 +63,7 @@ namespace PlayFair_RSA
         private string EncryptPlayfair(string plaintext, string key)
         {
             char[,] matrix = GeneratePlayfairMatrix(key);
-            plaintext = plaintext.ToUpper().Replace("J", "I");
+            plaintext = plaintext.ToUpper().Replace("J", "I").Replace(" ", ""); // Loại bỏ khoảng trắng
 
             // Chia văn bản thành từng cặp ký tự
             List<string> pairs = new List<string>();
@@ -84,6 +84,7 @@ namespace PlayFair_RSA
 
             return encryptedText;
         }
+
         private string EncryptPair(char c1, char c2, char[,] matrix)
         {
             int row1 = 0, col1 = 0, row2 = 0, col2 = 0;
@@ -142,7 +143,7 @@ namespace PlayFair_RSA
             textBox_Key.Text = randomKey.Substring(0, 5); // Chỉ lấy 5 ký tự đầu làm khóa
         }
         // Code giải thuật RSA :
-       
+
         //Kiểm tra ước chung lớn nhất giữa e và phi(n)
         private bool IsPrime(BigInteger num)
         {
@@ -262,5 +263,7 @@ namespace PlayFair_RSA
                 MessageBox.Show("Giải mã thất bại.");
             }
         }
+
+
     }
 }
